@@ -1,7 +1,7 @@
 package fr.pgah.java.unbrco.model.bibliotheque;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import fr.pgah.java.unbrco.model.livre.Livre;
 import fr.pgah.java.unbrco.model.livre.GenreLivre;
@@ -16,7 +16,7 @@ public class BibliothequeTests {
   private Bibliotheque testBibliotheque;
   private Bibliothecaire testBibliothecaire;
 
-  @BeforeAll
+  @BeforeEach
   public void setUp() {
     testBibliotheque = new Bibliotheque("Bibliothèque privée Dampierre", testBibliothecaire);
     testBibliothecaire = new Bibliothecaire("Kevin Roy", 10, testBibliotheque, livreRom);
