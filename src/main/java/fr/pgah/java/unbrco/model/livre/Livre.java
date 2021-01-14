@@ -10,7 +10,7 @@ public class Livre {
   private int annee;
   private int edition;
   private Bibliotheque bibliothequeMere;
-  private boolean estPrete;
+  private boolean estSorti;
 
   public Livre(String titre, String auteur, GenreLivre genre, int annee, int ed) {
   }
@@ -45,7 +45,7 @@ public class Livre {
   // MODIFIE : this
   // EFFETS : enregistre le fait que le livre est revenu
   public void enregistrerRetour() {
-    this.estPrete = false;
+    this.estSorti = false;
   }
 
   // RENVOIE : vrai si le livre est sorti
